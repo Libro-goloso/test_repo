@@ -1,0 +1,893 @@
+
+
+
+*
+{
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+h1, h2, h3, h4, p, img, div
+{
+    user-select: none;
+}
+
+
+img
+{
+    filter: saturate(200%);
+}
+
+html 
+ {
+   scroll-behavior: smooth;
+ }
+
+html,body
+{
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:flex-start;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(81, 0, 180) 100%);
+}
+
+/*backround*/
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a
+{
+    text-decoration: none;
+    margin: 0px;
+}
+
+
+.first-half
+{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/*card-logic*/
+.card 
+{
+    
+    width: 85%;
+    max-width: 400px;
+    height: fit-content;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    outline: 10px rgb(0, 0, 0) solid;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s, background-color .1s, color 0s;
+    background-clip: content-box;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+/*img-js-logic*/
+.profile-img-container
+{
+  width: 100%;
+  height: 360px;
+  position: relative;
+  border-radius: 10px;
+}
+
+#profile-img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+
+/*profile-upload-img*/
+
+input[type=file] {
+    display: none;
+    margin: 0;
+  }
+  
+
+
+
+  #upload-img-label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    width: 60px;
+    height: 45px;
+    padding: 0;
+    background-color: #501fcb;
+    border-top-left-radius:10px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ #upload-img
+ {
+    font-size: 20px;
+    margin-left: 1px;
+ }
+
+
+ .card h1
+{
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    margin-top: 2%;
+}
+
+
+
+
+
+.card h2
+{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+#card-button
+{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 22.5px;
+    border: 2.5px solid rgb(0, 0, 0);
+    border-radius: 555px;
+    padding: 7.5px 17.5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+.card:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+    color: white;
+    background-color: black;
+    outline: rgb(255, 255, 255) 10px solid;
+}
+
+#card-button:hover
+{
+    cursor: pointer;
+}
+
+.card:hover > #card-button
+{
+   background-color: black;
+   border-color: white;
+   color: white;
+   cursor: pointer;
+}
+
+
+@media(max-width:1000px)
+{
+    .container-img-desc
+    {
+        height: 100px;
+    }
+
+    #img-cloud
+    {
+        font-size: 40px;
+    }
+
+    #drag-text
+    {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+}
+
+
+@media(max-width:600px)
+{
+    .container-img-desc
+    {
+        height: 100px;
+    }
+
+   
+
+    .login-div
+    {
+        width: 90%;
+    }
+}
+
+
+
+@media(max-width:560px)
+{
+    .inputbox input
+{
+    width: 70%;
+    padding: 0px 7.5%;
+}
+}
+
+@media(max-width:500px)
+{
+    .inputbox input
+    {
+        width: 70%;
+        padding: 0px 10%;
+    }   
+    .inputbox span
+    {
+        position: absolute;
+        left: 20%;
+    }
+}
+
+@media(max-width:450px)
+{
+   
+
+    .inputbox
+    {
+        
+        height: fit-content;
+        width: 100%;
+        max-height: 125px;
+        margin-top: 15%;
+        margin-bottom: 0%;
+        position: relative;
+    }
+
+   
+    
+}
+
+@media(max-width:350px)
+{
+    .inputbox input
+    {
+        width: 70%;
+        padding: 0px 12.5%;
+    }   
+    .inputbox span
+    {
+        position: absolute;
+        left: 22.5%;
+    }
+}
+
+
+@media(max-width:1400px)
+{
+
+    body 
+    {
+        flex-direction: column;
+    }
+
+    .first-half
+
+    {
+        width: 100%;
+        position: static;
+    }
+
+  
+
+    .login-div
+    {
+        position: relative;
+        margin: auto;
+    }
+
+    .menu-container
+    {
+        top: 15px;
+        left: 0px;
+        
+    }
+
+    .sidebar
+    {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        top: 100px;
+    }
+
+}
+
+@media(max-width:310px)
+{
+    .div-menu
+    {
+        left: 15px;
+    }
+}
+
+@media(max-width:305px)
+{
+    .div-menu
+    {
+        transform: scale(0.8);
+    }
+}
+
+
+@media(max-width:290px)
+{
+    .div-menu
+    {
+        left: 7.5px;
+    }
+}
+
+
+/*second-half*/
+.Second-half
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.box
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box::after
+{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,transparent, #d400d4);
+    animation: animate 2s linear infinite;
+    animation-delay: -1s;
+}
+
+.box::before
+{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,transparent, #00ccff);
+    animation: animate 2s linear infinite;
+}
+
+
+@keyframes animate
+
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(360deg);
+    }
+
+}
+
+@media(max-width:1400px)
+{
+    .Second-half
+    {
+        width: 100%;
+        height: 600px;
+    }
+}
+
+.box span
+{
+    position: absolute;
+    inset: 5px;
+    background: #0c1022;
+    border-radius: 16px;
+    z-index: 2;
+}
+
+.box img
+{
+    position: absolute;
+    top: 0;
+    width: 50px;
+    z-index: 2;
+}
+
+.box-container
+{
+    transition: all .25s;
+    width: 400px;
+    height: 250px;
+    z-index: 2;
+    margin: auto 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.img-box
+{
+    position: absolute;
+    width: 225px;
+    height: 175px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    object-fit: cover;
+    object-position: center;
+    z-index: 6;
+    top: -50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .25s;
+
+}
+
+
+.img-box::after
+{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,transparent, #cf3749);
+    animation: animate 2s linear infinite;
+    animation-delay: -1s;
+}
+
+.img-box::before
+{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,transparent, #cf3749);
+    animation: animate 2s linear infinite;
+}
+
+
+.img-box span
+{
+    position: absolute;
+    inset: 5px;
+    height: 50px;
+    background: #0c1022;
+    border-radius: 16px;
+    z-index: 2;
+}
+
+.img-box img
+{
+    z-index: 2;
+    width: 95.75%;
+    border-radius: 15px;
+    height: 94.75%;
+    object-fit: cover;
+}
+
+.card-text-div
+{
+    
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 55%;
+    z-index: 90;
+    transition: all .1s ease-out;
+}
+
+.card-text-div h1
+{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #00ccff;
+}
+
+.card-text-div h2
+{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: rgb(197, 97, 97);
+}
+
+
+.desc-text-div
+{
+    width: 70%;
+    height: fit-content;
+    z-index: 9;
+    position: absolute;
+    top: 61%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.desc-text-div h2
+{
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    transition: all 55s;
+    display: none;
+}
+
+
+.button-prof-div
+{
+    display: none;
+}
+
+/*profile-upload-img*/
+
+input[type=file] {
+    display: none;
+    margin: 0;
+  }
+  
+
+#upload-img-label {
+    position: absolute;
+    bottom: 4.5px;
+    right: 4.75px;
+    margin: 0;
+    width: 50px;
+    height: 35px;
+    padding: 0;
+    background-color: #501fcb;
+    border-top-left-radius:10px;
+    border-bottom-right-radius: 14px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: all .25s;
+  }
+  
+ #upload-img
+ {
+    font-size: 15px;
+    margin-left: 1px;
+    z-index: 100;
+ }
+
+ /*end-profile-upload-img*/
+
+
+
+ .box-container:hover
+ {
+    width: 500px;
+    height: 550px;
+    cursor: pointer;
+ }
+
+ .box-container:hover .img-box
+ {
+    width: 322.5px;
+    height: 257.5px;
+ }
+
+ .box-container:hover #profile-img-profile
+ {
+    width: 97.5%;
+    height: 96%;
+    border-radius: 16px;
+ }
+
+ .box-container:hover #upload-img-label
+ {
+    bottom: 5px;
+    right: 4.5px;
+ }
+ 
+
+ .box-container:hover .card-text-div
+ {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 42%;
+    z-index: 90;
+ }
+
+ .box-container:hover .desc-text-div
+{
+    display: flex;
+}
+
+
+.box-container:hover .desc-text-div h2
+{
+    
+    display: block;
+}
+
+.box-container:hover .button-prof-div
+{
+    
+    height: 100px;
+    position: absolute;
+    top: 77%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
+}
+
+
+.box-container:hover .button-prof-div button
+{
+    width: 140px;
+    height: 60px;
+    color: rgb(9, 9, 9);
+    background-color: #00ccff;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.box-container:hover .button-prof-div :nth-child(2)
+{
+    width: 140px;
+    height: 60px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(237, 237, 237);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.box-container:hover .box::after
+{
+    width: 1000px;
+    height: 1000px;
+}
+
+.box-container:hover .box::before
+{
+    width: 1000px;
+    height: 1000px;
+}
+
+@media(min-width:430px)
+{
+    .box-container:hover .button-prof-div
+    {
+        width: 80%;
+    }
+}
+
+@media(max-width:429px)
+{
+    .box-container:hover .button-prof-div
+    {
+        width: 100%;
+    }
+}
+
+@media(max-width:500px)
+{
+    .box-container:hover .img-box
+ {
+    width: 302.5px;
+    height: 237.5px;
+ }
+
+    .box-container:hover .card-text-div
+    {
+        top: 38%;
+    }
+
+    .desc-text-div
+    {
+        top: 57%;
+    }
+
+    .box-container:hover #upload-img-label
+    {
+       bottom: 5px;
+       right: 4.5px;
+    }
+    
+}
+
+@media(max-width:450px)
+{
+    .box-container:hover .img-box
+ {
+    width: 292.5px;
+    height: 227.5px;
+ }
+
+ .box-container:hover .card-text-div
+ {
+     top: 35%;
+ }
+
+ .desc-text-div
+ {
+     top: 54%;
+ }
+ .box-container:hover #upload-img-label
+ {
+    bottom: 5px;
+    right: 3.7px;
+ }
+ 
+}
+
+@media(max-width:375px)
+{
+    .box-container:hover .img-box
+ {
+    width: 280.5px;
+    height: 215.5px;
+ }
+
+ .box-container:hover .card-text-div
+ {
+     top: 32%;
+ }
+
+ .desc-text-div
+ {
+     top: 51%;
+ }
+
+ .box-container:hover #upload-img-label
+ {
+    bottom: 4px;
+    right: 3.7px;
+ }
+
+}
+
+@media(max-width:360px)
+{
+    .box-container:hover .img-box
+ {
+    width: 260.5px;
+    height: 195.5px;
+ }
+
+ .box-container:hover .card-text-div
+ {
+     top: 29%;
+ }
+
+ .desc-text-div
+ {
+     top: 48%;
+ }
+
+ .box-container:hover #upload-img-label
+ {
+    bottom: 4px;
+    right: 3.7px;
+ }
+
+}
+
+@media(max-width:280px)
+{
+    .menu-container
+    {
+        top: -5%;
+    }
+}
+
+@media(max-width:270px)
+{
+    html,body
+    {
+        overflow-x: hidden;
+    }
+}
+
+.box-start-wars
+{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    border-radius: 20px;
+    border: 5px solid white;
+}
+
+#div-text-card
+{  
+    margin-top: 0px;
+    color: #00ccff;
+    width: 50%;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#div-text-card h1
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+   
+
+/*il problema e' che second half va su perche' first half e' 100%(100vh)*/

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+      </style>
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+       
+        
+            
+        
+            
+            <div class="first-half">
+            </div>
+            
+            <div class="Second-half">
+                
+                <div class="box-start-wars">
+                    <div id="div-text-card">
+                        <h1>Profile Preview :</h1>
+                    </div>
+                    <div class="box-container">
+                        <div class="img-box">
+                            <span></span>
+                            <img draggable="false" src="dem.png" id="profile-img-profile" alt="">
+                            <input type="file" id="upload">
+                                <label id="upload-img-label" for="upload">
+                                    <i class="fa-solid fa-camera" id="upload-img"></i>
+                                </label>
+                        </div>
+                        <div class="box">
+                            <span></span>
+                            <div class="card-text-div">
+                                <h1>Fabio</h1>
+                                <h2>web developer</h2>
+                            </div>
+                            <div class="desc-text-div">
+                                <h2>Ciao, sono Fabio e questa e' la mia descrizione del profilo, spero di conoscere molte persone</h2>
+                            </div>
+                            <div class="button-prof-div">
+                                <button>Follow</button>
+                                <button>Message</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+                
+            
+        
+            
+    
+
+        
+
+
+
+    <script>
+        const image = document.querySelector("#profile-img-profile"),
+        image_2 = document.querySelector("#profile-img-preview"),
+        image_3 = document.querySelector("#img-icon"), // img-ref-con-query(id)
+        input = document.querySelector("#upload"); // input-ref-con-query(id)
+    
+        input.addEventListener("change", () =>{  // quando clicco la const input(che e' l' input con l' id settato nella const) fa cambiare la const image
+            image.src = URL.createObjectURL(input.files[0]);
+            image_2.src = URL.createObjectURL(input.files[0]);
+            image_3.src = URL.createObjectURL(input.files[0]); // la const img viene cambiata con il primo file che scelgo
+        })
+    
+        
+    </script>
+
+<script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+
+    const el = document.querySelector('.div-menu') //quando clicco
+    const menu = document.querySelector('.sidebar'); // a questo elemento viene applicata la classe "show-menu"
+
+    el.onclick = function toggle()
+    {
+        menu.classList.toggle("showmenu");
+    }
+
+  
+    </script>
+
+</body>
+</html>
